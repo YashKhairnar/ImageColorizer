@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorization Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="image-container">
+        <div class="image-box original">
+            <h2>Original Image</h2>
+            <img src="{{ url_for('static', filename='original.jpg')}}" alt="Original Image">
+        </div>
+        <div class="image-box colorized">
+            <h2>Colorized Image</h2>
+            <img src="{{ url_for('static', filename='colorized.jpg')}}" alt="Colorized Image">
+        </div>
+    </div>
+</body>
+</html>
